@@ -9,18 +9,21 @@ public class Droid{
     name = droidName;
   }
 
+  //Batterie-Level reduzieren
   public void dance() {
     batteryLevel -= 20;
     System.out.println(name + " is performing dancing!");
     System.out.println("Remaining battery level: " + Droid.batteryLevel + "%");
   }
-
+  
+ //Batterie-Level reduzieren
   public void coding() {
     batteryLevel -= 5;
     System.out.println(name + " is performing coding!");
     System.out.println("Remaining battery level: " + Droid.batteryLevel + "%");
   }
 
+  //Batterie-Level reduzieren
   public void clean() {
     batteryLevel -= 10;
     System.out.println(name + " is performing cleaing!");
@@ -33,7 +36,6 @@ public class Droid{
     double loadingtime = (100 - Droid.batteryLevel)/loadPerMinute;
 
     batteryLevel += loading;
-
 
     System.out.println("Required loadingtime for 100% battery level for " + name + " is " + loadingtime + " minutes.");
     System.out.println(name + " is loading battery for " + loadingtime + " minutes! - Loadingspeed: " + Droid.loadPerMinute + " % per minute!");
